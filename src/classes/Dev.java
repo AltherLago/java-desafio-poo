@@ -8,11 +8,11 @@ public class Dev {
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
-    public void increverBootcamp(Bootcamp bootcamp){
+    public void inscreverBootcamp(Bootcamp bootcamp){
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
 
         // TODO
-        bootcamp.getDevInscritos().add(this);
+        bootcamp.getDevsInscritos().add(this);
     }
 
     public void progredir() {
@@ -28,7 +28,7 @@ public class Dev {
     }
 
     public double calcularTotalXp(){
-        Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
+        // Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
         // double soma = 0;
         // while(iterator.hasNext()){
             // double next = iterator.next().calcularXp();
@@ -58,7 +58,7 @@ public class Dev {
         this.conteudosInscritos = conteudosInscritos;
     }
 
-    public Set<Conteudo> getConteudosInscritos() {
+    public Set<Conteudo> getConteudosConcluidos() {
         return conteudosConcluidos;
     }
 
