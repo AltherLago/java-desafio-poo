@@ -20,12 +20,13 @@ public class Curso extends Conteudo{
         this.cargaHoraria = cargaHoraria;
     }
 
+
     @Override
     public String toString() {
-    return "Curso{\n" +
+        return "curso{\n" +
             "\ttitulo = '" + getTitulo() + "',\n" +
             " \tdescricao = '" + getDescricao() + "',\n" +
-            " \tcargaHoraria = " + cargaHoraria + '\n' +
+            " \tcargahoraria = " + cargaHoraria + '\n' +
             '}';
     }   
 
