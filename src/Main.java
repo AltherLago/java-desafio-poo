@@ -1,6 +1,11 @@
 import classes.Curso;
+import classes.Mentoria;
+
+import java.time.LocalDate;
 
 public class Main{
+
+    static boolean isDEBUG = true;
 
     public static void main(String[] args){
 
@@ -15,9 +20,16 @@ public class Main{
         curso2.setTitulo("curso js");
         curso2.setDescricao("descricao curso js");
 
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("mentoria js");
+        mentoria.setDescricao("descricao mentoria js");
+        mentoria.setData(LocalDate.now());
  
-        System.out.println(curso1);
-        System.out.println(curso2);
+        if(isDEBUG){
+            System.out.println(curso1);
+            System.out.println(curso2);
+            System.out.println(mentoria);
+        }
     }
 
     public static void cleanConsoleScreen(){
